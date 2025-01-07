@@ -1,0 +1,10 @@
+<app-add-to-do />
+@if (!toDoList().length) {
+<p>Loading...</p>
+}
+
+<div>
+  @for (item of toDoList(); track item) {
+  <app-todo-item [todo]="item" />
+  }
+</div>

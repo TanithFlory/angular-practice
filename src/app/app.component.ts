@@ -1,10 +1,10 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AboutUsComponent } from './components/about-us/about-us.component';
-
+import { HeaderComponent } from './components/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AboutUsComponent],
+  imports: [RouterOutlet, HeaderComponent, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
