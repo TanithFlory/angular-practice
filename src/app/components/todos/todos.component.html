@@ -1,10 +1,11 @@
 <app-add-to-do />
+<app-search-todo (searchChanged)="searchChanged($event)" />
 @if (!toDoList().length) {
 <p>Loading...</p>
 }
 
 <div>
-  @for (item of toDoList(); track item) {
+  @for (item of toDoList() | filteredTodos:searchInput(); track item) {
   <app-todo-item [todo]="item" />
   }
 </div>

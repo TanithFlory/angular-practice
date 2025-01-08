@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+.strike-off {
+  text-decoration: line-through;
+  background-color: #d3f9d8;
+  color: #6c757d;
+}
